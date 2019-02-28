@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Full Stack Web Development</title>
+<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" charset="UTF-8">
+  <meta name="description" content="Front End Software Engineer">
+  <meta name="keywords" content="portfolio, brenopolanski, HTML, CSS, JS, JavaScript, front-end, frontend, web development">
+  <meta name="author" content="Software">
+<style>
+.contain{
+padding-left:50px;
+padding-right:50px;
+padding-top:50px;
+padding-bottom:50px
+}
+
+.subject {
+  text-align:center;
+  width:400px;
+  height:400px;
+}
+.col-in{
+width:425px;
+height:445px;
+border:2px;
+border-radius:2px;
+padding-left:12.5px;
+padding-right:12.5px;
+padding-top:12.5px;
+padding-bottom:12.5px;
+
+}
+
+.pic{
+width:400px;
+height:200px;
+border-radius:3px;
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+  }
+  .close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+#myImg,myImg4 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#myImg1,myImg2,myImg6,myImg8 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#myImg,myImg1,myImg2,myImg4,myImg6,myImg8:hover {opacity: 0.7;}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+.inside{
+background-color:Cornsilk;
+}
+</style>
+</head>
+<body class="inside">
+
+<div class="contain">
+	<div class="col-in"  style=float:left;>
+	<image src="img/image4.jpg" alt="A software engineer is a person who applies the principles of software engineering to the design, development, 
+				maintenance, testing, and evaluation of computer software." id="myImg1"  class="pic">
+		<div class="subject">
+			<p>A software engineer is a person who applies the principles of software engineering to the design, development, 
+				maintenance, testing, and evaluation of computer software.</p>
+		</div>
+	</div>
+	<div class="col-in" style=float:left>
+	<a><img src="img/images3.jpg" class="pic" id="myImg" alt="Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, 		
+			Python has a design philosophy that emphasizes code readability, notably using significant whitespace. 
+			It provides constructs that enable clear programming on both small and large scales. In July 2018, 
+			Van Rossum stepped down as the leader in the language community."></a>
+
+	<div class="subject">
+		<a>
+			Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, 		
+			Python has a design philosophy that emphasizes code readability, notably using significant whitespace. 
+			It provides constructs that enable clear programming on both small and large scales. In July 2018, 
+			Van Rossum stepped down as the leader in the language community.</a>
+		</div>
+	</div>
+	<div class="col-in" style=float:left;>
+	<image src="img/java.jpg" alt=" java is a general-purpose computer-programming language that is concurrent, class-based, object-oriented,
+			and specifically designed to have as few implementation dependencies as possible. 
+			It is intended to let application developers write once, run anywhere (WORA),
+			meaning that compiled Java code can run on all platforms that support Java without the need for recompilation" class="pic" id="myImg2" >
+		<div class="subject">
+			<p> java is a general-purpose computer-programming language that is concurrent, class-based, object-oriented,
+			and specifically designed to have as few implementation dependencies as possible. 
+			It is intended to let application developers "write once, run anywhere" (WORA),
+			meaning that compiled Java code can run on all platforms that support Java without the need for recompilation</p>
+		</div>
+	</div>
+	<div class="col-in" style=float:left;>
+	<image src="img/c.jpg" alt="c is a general-purpose, imperative computer programming language, 
+			supporting structured programming, lexical variable scope and recursion, 
+			while a static type system prevents many unintended operations. By design, 
+			C provides constructs that map efficiently to typical machine instructions.
+			" class="pic" id="myImg4">
+		<div class="subject">
+			<p>c is a general-purpose, imperative computer programming language, 
+			supporting structured programming, lexical variable scope and recursion, 
+			while a static type system prevents many unintended operations. By design, 
+			C provides constructs that map efficiently to typical machine instructions, 
+			and therefore it has found lasting use in applications that had formerly been coded in assembly language, 
+			including operating systems, as well as various application software for 
+			computers ranging from supercomputers to embedded systems.</p>
+		</div>
+	</div>
+	<div class="col-in"  style=float:left;>
+	<image src="img/c++.jpg" alt="c++ is a general-purpose programming language. It has imperative, object-oriented and generic programming features,
+		while also providing facilities for low-level memory manipulation." id="myImg6" class="pic">
+		<div class="subject">
+			<p>c++ is a general-purpose programming language. It has imperative, object-oriented and generic programming features, 
+				while also providing facilities for low-level memory manipulation.</p>
+		</div>
+	</div>
+	<div class="col-in"  style=float:left;>
+	<image src="img/and.jpg" alt=" Android is a mobile operating system developed by Google. It is based on a modified version of the Linux kernel and other open source software, and is designed primarily for touchscreen mobile devices such as smartphones and tablets. In addition, Google has further developed Android TV for televisions, Android Auto for cars, and Wear OS for wrist watches, each with a specialized user interface.
+			Variants of Android are also used on game consoles, digital cameras, PCs and other electronics." id="myImg8" class="pic">
+		<div class="subject">
+			<p>Android is a mobile operating system developed by Google. It is based on a modified version of the Linux kernel and other open source software, and is designed primarily for touchscreen mobile devices such as smartphones and tablets. In addition, Google has further developed Android TV for televisions, Android Auto for cars, and Wear OS for wrist watches, each with a specialized user interface.
+			Variants of Android are also used on game consoles, digital cameras, PCs and other electronics.</p>
+		</div>
+	</div>
+</div>
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg1');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg2');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg4');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg6');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg8');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+</body>
+</html>
